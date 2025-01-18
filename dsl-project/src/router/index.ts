@@ -32,79 +32,73 @@ const routes: Array<RouteRecordRaw> = [
     path: "/user",
     name: "user",
     component: HomeView,
-    children: [
-      {
-        path: "/user/appointment",
-        name: "userappointment",
-        component: AppointmentRound,
-      },
-      {
-        path: "/user/appointment/selectdate",
-        name: "userselectdate",
-        component: DateSlot,
-      },
-      {
-        path: "/user/myappointment",
-        name: "usermyappointment",
-        component: UserAppointment,
-      },
-      //User จองคิว
-      { path: "/user/queue", name: "userqueue", component: QueueUpView },
-      {
-        path: "/user/queue/statisfaction",
-        name: "usermyqueue",
-        component: UserQueue,
-      },
-      {
-        path: "/user/queue/statisfaction",
-        name: "userstatisfaction",
-        component: Review,
-      },
-    ],
+  },
+  {
+    path: "/user/appointment",
+    name: "userappointment",
+    component: AppointmentRound,
+  },
+  {
+    path: "/user/appointment/selectdate",
+    name: "userselectdate",
+    component: DateSlot,
+  },
+  {
+    path: "/user/myappointment",
+    name: "usermyappointment",
+    component: UserAppointment,
+  },
+  //User จองคิว
+  { path: "/user/queue", name: "userqueue", component: QueueUpView },
+  {
+    path: "/user/queue/myqueue",
+    name: "usermyqueue",
+    component: UserQueue,
+  },
+  {
+    path: "/user/queue/statisfaction",
+    name: "userstatisfaction",
+    component: Review,
   },
   {
     path: "/admin",
     name: "admin",
     component: Mainaddmin,
-    children: [
-      {
-        path: "/admin/addstaff",
-        name: "adminaddstaff",
-        component: Addstaff,
-      }
-    ],
+  },
+  {
+    path: "/admin/addstaff",
+    name: "adminaddstaff",
+    component: Addstaff,
   },
   {
     path: "/staff",
     name: "staff",
     component: Mainstaff,
-    children: [
-      {
-        path: "/staff/callqueue",
-        name: "staffcallqueue",
-        component: StaffCallQueue,
-      },
-      {
-        path: "/staff/daysetting",
-        name: "staffdaysetting",
-        component: Daysetting,
-      }, 
-      {
-        path: "/staff/daysetting/editdocamendmentday",
-        name: "staffeditdocamendmentday",
-        component: EditDayRepairdoc,
-      },
-      {
-        path: "/staff/daysetting/editday",
-        name: "staffeditday",
-        component: EditdaysendDoc1,
-      },
-      {
-        path: "/staff/dashboard",
-        name: "staffdashboard",
-        component: TVshow,
-      },
-    ],
+  },
+  {
+    path: "/staff/callqueue",
+    name: "staffcallqueue",
+    component: StaffCallQueue,
+  },
+  {
+    path: "/staff/daysetting",
+    name: "staffdaysetting",
+    component: Daysetting,
+  },
+  {
+    path: "/staff/daysetting/editdocamendmentday",
+    name: "staffeditdocamendmentday",
+    component: EditDayRepairdoc,
+  },
+  {
+    path: "/staff/daysetting/editday",
+    name: "staffeditday",
+    component: EditdaysendDoc1,
+  },
+  {
+    path: "/staff/dashboard",
+    name: "staffdashboard",
+    component: TVshow,
   },
 ];
 
